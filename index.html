@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RSS IT-tjänster</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="overlay"></div>
+      <nav class="nav container">
+        <div class="brand">
+          <span class="brand-top">RSS</span>
+          <span class="brand-line"></span>
+          <span class="brand-bottom">IT-tjänster</span>
+        </div>
+        <a href="#paket" class="btn btn-outline">Se paket</a>
+      </nav>
+
+      <section class="hero-content container">
+        <h1>Webbdesign som hjälper ditt företag att växa online</h1>
+        <p>
+          Vi bygger moderna och snabba hemsidor för småföretagare. Oavsett om du
+          börjar från noll eller vill förnya din nuvarande sida har vi ett paket
+          för dig.
+        </p>
+        <a href="#paket" class="btn">Kom igång idag</a>
+      </section>
+    </header>
+
+    <main>
+      <section id="paket" class="pricing container">
+        <h2>Våra paket</h2>
+        <p class="section-intro">
+          Tydliga priser utan krångel. Välj paketet som passar ditt behov.
+        </p>
+
+        <div class="cards">
+          <article class="card featured">
+            <h3>Kom igång online</h3>
+            <p class="card-subtext">För dig som inte har en hemsida idag</p>
+            <p class="price">5 600 kr</p>
+            <ul>
+              <li>Ny modern hemsida</li>
+              <li>Mobilanpassad design</li>
+              <li>Kontaktformulär</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Ny start</h3>
+            <p class="card-subtext">För dig som vill uppdatera din nuvarande hemsida</p>
+            <p class="price">4 900 kr</p>
+            <ul>
+              <li>Designuppdatering</li>
+              <li>Förbättrad struktur</li>
+              <li>Snabbare upplevelse</li>
+            </ul>
+          </article>
+
+          <article class="card addon">
+            <h3>Professionellt fotopaket</h3>
+            <p class="card-subtext">Vi kommer ut och tar bilder till hemsidan</p>
+            <p class="price">+500 kr</p>
+            <ul>
+              <li>Kan läggas till på valfritt paket</li>
+              <li>Bildmaterial anpassat för webben</li>
+              <li>Mer personlig och trovärdig sida</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> RSS IT-tjänster</p>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
