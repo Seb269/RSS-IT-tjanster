@@ -88,3 +88,64 @@
     </script>
   </body>
 </html>
+
+   </article>
+
+          <article class="card">
+            <h3>Ny start</h3>
+            <p class="card-subtext">För dig som vill uppdatera din nuvarande hemsida</p>
+            <p class="price">4 900 kr</p>
+            <ul>
+              <li>Designuppdatering</li>
+              <li>Förbättrad struktur</li>
+              <li>Snabbare upplevelse</li>
+            </ul>
+          </article>
+
+          <article class="card addon">
+            <h3>Professionellt fotopaket</h3>
+            <p class="card-subtext">Vi kommer ut och tar bilder till hemsidan</p>
+            <p class="price">+500 kr</p>
+            <ul>
+              <li>Kan läggas till på valfritt paket</li>
+              <li>Bildmaterial anpassat för webben</li>
+              <li>Mer personlig och trovärdig sida</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="kontakt" class="contact container">
+        <h2>Kontakta oss</h2>
+        <p class="section-intro">Hör av dig så hjälper vi dig att komma igång.</p>
+        <div class="contact-card">
+          <p class="contact-label">E-post</p>
+          <a id="contact-email" href="mailto:rss.ittjanster@gmail.com">rss.ittjanster@gmail.com</a>
+          <button id="copy-email" class="btn btn-copy" type="button">Kopiera e-postadress</button>
+          <p id="copy-status" class="copy-status" aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> RSS IT-tjänster</p>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      const copyButton = document.getElementById('copy-email');
+      const copyStatus = document.getElementById('copy-status');
+      const email = 'rss.ittjanster@gmail.com';
+
+      copyButton.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(email);
+          copyStatus.textContent = 'E-postadressen är kopierad!';
+        } catch {
+          copyStatus.textContent = 'Kunde inte kopiera automatiskt. Markera och kopiera adressen manuellt.';
+        }
+      });
+    </script>
+  </body>
+</html>
